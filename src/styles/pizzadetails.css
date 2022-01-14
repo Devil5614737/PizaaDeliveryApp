@@ -1,0 +1,108 @@
+.PizzaDetails-main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.PizzaDetails-main-container .PizzaDetails-container {
+  margin-top: 62px;
+  margin-left: 12px;
+  margin-right: 12px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (500px)[2];
+      grid-template-columns: repeat(2, 500px);
+  grid-column-gap: 32px;
+}
+
+@media screen and (max-width: 1072px) {
+  .PizzaDetails-main-container .PizzaDetails-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 500px;
+        grid-template-columns: 500px;
+    place-content: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+.PizzaDetails-main-container .PizzaDetails-container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 22px;
+}
+
+.PizzaDetails-main-container .PizzaDetails-container .pizza-info {
+  margin-top: 12px;
+}
+
+.PizzaDetails-main-container .PizzaDetails-container .pizza-info .pizza-info-title {
+  margin-bottom: 12px;
+}
+
+.PizzaDetails-main-container .PizzaDetails-container .pizza-info .pizza-info-title p {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.PizzaDetails-main-container .PizzaDetails-container .pizza-info .pizza-info-price {
+  margin-bottom: 12px;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.PizzaDetails-main-container .PizzaDetails-container .pizza-info .pizza-info-price span {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.PizzaDetails-main-container .PizzaDetails-container .pizza-info .desc {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-container select {
+  border: 3px solid;
+  width: 80%;
+  font-family: "Poppins",sans-serif;
+  font-size: 2rem;
+  padding: .5em .3em;
+  font-weight: 500;
+}
+
+.dropdown-container select option {
+  font-family: "Poppins",sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.cart-add-btn {
+  width: 100px;
+  height: 40px;
+  margin-top: 12px;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  background-color: #AF1DF3;
+  color: white;
+  cursor: pointer;
+}
+
+.cart-add-btn:hover {
+  background-color: #b544e9;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.dropdown-title {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+/*# sourceMappingURL=pizzadetails.css.map */

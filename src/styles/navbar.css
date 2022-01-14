@@ -1,0 +1,146 @@
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em 0;
+}
+
+@media screen and (max-width: 1204px) {
+  .navbar {
+    padding: 1em 2em;
+  }
+}
+
+.navbar .left-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .left-links .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #F51867;
+}
+
+.navbar .left-links .links {
+  margin-left: 54px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar .left-links .links {
+    margin-left: 30px;
+  }
+}
+
+.navbar .left-links .links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .left-links .links ul li {
+  margin-right: 32px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar .left-links .links ul li {
+    margin-right: 30px;
+  }
+}
+
+.navbar .left-links .links ul li a {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar .left-links .links ul li a {
+    font-size: 1.5rem;
+  }
+}
+
+.navbar .right-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .right-links .cart {
+  position: relative;
+  z-index: 312;
+  margin-right: 32px;
+  cursor: pointer;
+}
+
+.navbar .right-links .cart img {
+  height: 25px;
+  width: 38px;
+}
+
+.navbar .right-links .cart p {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  font-size: 1.6rem;
+  background-color: red;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  padding: .6em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.navbar .right-links .login-btn {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: .2em .7em;
+  background-color: #AF1DF3;
+  color: white;
+}
+
+.theme-toggle {
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin-right: 32px;
+  cursor: pointer;
+}
+
+.theme-toggle-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.theme-toggle-container p {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+/*# sourceMappingURL=navbar.css.map */

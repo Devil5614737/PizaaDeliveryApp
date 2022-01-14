@@ -1,0 +1,86 @@
+.login-container{
+    width: 100vw;
+    height: 100vh;
+    background: url('../assets/loginBackground.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+&::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    z-index: 1;
+}
+    .login-card{
+        padding: 1.4em 3em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+       background-color: white;
+        width: 400px;
+        border-radius: 6px;
+        height: 400px;
+        border-radius: 44px;
+        .login-cart-title{
+            font-weight: bold;
+            font-size: 2.4rem;
+            margin-bottom: 22px;
+            color: #2B2B2B;
+        }
+        .label{
+            margin-top: 312px;
+            font-size:1.7rem;
+
+        }
+        .input{
+            display: block;
+            width: 100%;
+            height: 40px;
+            margin-bottom: 22px;
+            font-size: 1.5rem;
+            padding-left: .3em;
+            background: #E4E4E4;
+            border: none;
+            &:focus{
+                outline: none;
+            }
+        
+           
+        }
+        
+        .login-btn{
+            
+            width: 100%;
+            height: 40px;
+            background: #1F73F1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.6rem;
+            cursor: pointer;
+            &:focus{
+                outline: none;
+            }
+        }
+        .signup-link{
+            margin-top: 8px;
+            font-size: 1.7em;
+            span{
+                font-weight: bold;
+                cursor: pointer;
+                &:hover{
+                    // text-decoration: underline;
+                    border-bottom: 2px solid black;
+                }
+            }
+        }
+    }
+}

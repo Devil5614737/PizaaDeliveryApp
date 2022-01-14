@@ -1,0 +1,100 @@
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+    @media screen and (max-width:1204px) {
+        padding: 1em 2em;
+    }
+
+    .left-links{
+        display: flex;
+        align-items: center;
+        .logo{
+            font-size: 2rem;
+            font-weight: bold;
+            color: #F51867;
+        }
+        .links{
+            margin-left: 54px;
+            @media screen and (max-width:600px) {
+                margin-left:30px
+               }
+            ul{
+                display: flex;
+                align-items: center;
+                li{
+                    margin-right: 32px;
+                    @media screen and (max-width:600px) {
+                     margin-right:30px
+                    }
+                    a{
+                        font-size: 1.8rem;
+                        font-weight: 500;
+                        @media screen and (max-width:600px) {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .right-links{
+        display: flex;
+        align-items: center;
+        .cart{
+            position: relative;
+            z-index: 312;
+            margin-right: 32px;
+            cursor: pointer;
+            img{
+                height: 25px;
+                width: 38px;
+            }
+            p{
+                position: absolute;
+                top: -1px;
+                right: 0;
+                font-size: 1.6rem;
+                background-color: red;
+                border-radius: 100%;
+                width: 15px;
+                height:15px;
+                padding: .6em;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+        }
+        .login-btn{
+            font-size: 1.8rem;
+            font-weight: bold;
+            padding: .2em .7em;
+            background-color: #AF1DF3;
+            color: white;
+        }
+    }
+}
+.theme-toggle{
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-right: 32px;
+    cursor: pointer;
+}
+
+// theme toggl button
+.theme-toggle-container{
+    // border: 1px solid;
+    display: flex;
+    align-items: center;
+    
+   p{
+    font-size: 1.8rem;
+    font-weight: 500;
+   }
+    
+}
+

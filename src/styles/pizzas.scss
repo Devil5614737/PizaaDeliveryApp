@@ -1,0 +1,90 @@
+.main-container{
+    max-width: 1200px;
+   
+    margin: 0 auto;
+
+    .pizzas-container{
+        margin-top: 52px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap:8%;
+        grid-row-gap: 62px;
+        @media screen and (max-width:1200px) {
+            grid-template-columns: repeat(2,1fr);
+            grid-column-gap:1%;
+            place-items: center;
+        }
+        @media screen and (max-width:600px) {
+            grid-template-columns: repeat(1,1fr);
+            place-items: center;
+            grid-column-gap:1%;
+        }
+        @media screen and (max-width:500px) {
+            grid-template-columns: repeat(1,1fr);
+            width:fit-content;
+            margin-left: 25%;
+            place-items: center;
+            grid-column-gap:1%;
+            justify-content: center;
+        }
+        .pizza-card{
+            cursor: pointer;
+            width: 339px;
+            position: relative;
+            height: 300px;
+            border-radius: 40px;
+            box-shadow: 10px 10px 10px rgba(0,0,0,.1);
+            box-shadow: 10px 10px 42px -3px rgba(0, 0, 0, 0.25);
+            &:hover{
+                transform:scale(1.1);
+                transition: all .3s ease-in-out;
+                // position: absolute;
+            }
+            img{
+                border-radius: 40px;
+                width: 100%;
+                object-fit: cover;
+            }
+            .pizza-info{
+                padding: .7em 1em;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 1.5rem;
+                .pizza-info-left{
+                    display: flex;
+                    .pizza-name{
+                        font-weight: bold;
+                        align-items: center;
+                    }
+                    .veg-symbol{
+                        border: 2px solid green;
+                        width: 20px;
+                        height: 20px;
+                        display: grid;
+                        place-items: center;
+                        align-items: center;
+                        margin-left: 8px;
+                        .circle{
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 100%;
+                            background-color: green;
+                        }
+                    }
+                }
+                .price{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.loader{
+   position: absolute;
+   z-index: 1212;
+top: 50%;
+left: 50%;
+   transform: translate(-50%,-50%);
+}
