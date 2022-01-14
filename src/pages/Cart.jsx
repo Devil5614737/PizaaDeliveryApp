@@ -76,7 +76,7 @@ export default function Cart() {
           <p>SubTotal</p>
           <p>₹{totalPrice}</p>
         </div>
-        <p className="order-btn" onClick={()=>setShowPayment(true)}>place order</p>
+        <p className="order-btn" >place order</p>
       </div>
       </div>
      </div>
