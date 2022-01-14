@@ -6,13 +6,12 @@ import { Context } from "../Context";
 import LoadingBar from 'react-top-loading-bar';
 import SimpleBar from 'simplebar-react';
 import 'simplebar/dist/simplebar.min.css';
-import PaymentInfo from "../components/PaymentInfo";
+
 
 export default function Cart() {
   const [progress, setProgress] = useState(100)
   let [dis,setDis]=useState()
   const {incrementQuantity, cartItems,handleRemove,decreaseQuantity  } = useContext(Context);
-  const[showPayment,setShowPayment]=useState(false)
 
 
 
@@ -81,7 +80,7 @@ export default function Cart() {
       </div>
       </div>
      </div>
-     {showPayment && <PaymentInfo/>}
+    
     
      </>
   );
