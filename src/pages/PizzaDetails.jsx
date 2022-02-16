@@ -9,8 +9,9 @@ function PizzaDetails() {
 
 
     return (
-       <div className="PizzaDetails-main-container">
+        <>
            <Navbar/>
+       <div className="PizzaDetails-main-container">
            <div className="PizzaDetails-container">
                <img src={pizzaDetails.img} alt="pizza" className="pizza-img" />
                <div className="pizza-info">
@@ -32,6 +33,7 @@ function PizzaDetails() {
                </div>
            </div>
        </div>
+       </>
     )
 }
 

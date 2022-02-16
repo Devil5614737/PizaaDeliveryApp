@@ -1,6 +1,5 @@
 .main-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 1em 4%;
 }
 
 .main-container .pizzas-container {
@@ -9,41 +8,23 @@
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 8%;
   grid-row-gap: 62px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1160px) {
   .main-container .pizzas-container {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 1%;
     place-items: center;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 748px) {
   .main-container .pizzas-container {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     place-items: center;
     grid-column-gap: 1%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .main-container .pizzas-container {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin-left: 25%;
-    place-items: center;
-    grid-column-gap: 1%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 

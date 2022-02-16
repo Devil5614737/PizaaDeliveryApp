@@ -42,8 +42,8 @@ export default function Cart() {
   return (
     <>
        <LoadingBar color="#f11946" progress={progress} onLoaderFinished={() => setProgress(0)} />
-    <div className="cart-main-container">
       <Navbar />
+    <div className="cart-main-container">
       <div className="cartItems-containers">
       <SimpleBar autoHide='true' style={{ height: '85vh' ,width:'640px'}} >
         <div className='cartItem-cards-container'>

@@ -35,8 +35,8 @@ fetchData()
         <>
           <LoadingBar color="#f11946" progress={progress} onLoaderFinished={() => setProgress(0)} />
           <div className="loader">   <PacmanLoader color='#E02CA3' loading={loading}  size={20} /></div>
-        <div className="main-container">
         <Navbar/>
+        <div className="main-container">
         <div className="pizzas-container">
           {desserts.map(item=><div key={item.id} className="pizza-card" onClick={()=>handleDessertInfo(item)}>
               <img src={item.img} alt="pizza" />

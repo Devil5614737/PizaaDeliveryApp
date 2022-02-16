@@ -1,12 +1,9 @@
 .PizzaDetails-main-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 1em 4%;
 }
 
 .PizzaDetails-main-container .PizzaDetails-container {
   margin-top: 62px;
-  margin-left: 12px;
-  margin-right: 12px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (500px)[2];
@@ -32,6 +29,12 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 22px;
+}
+
+@media screen and (max-width: 600px) {
+  .PizzaDetails-main-container .PizzaDetails-container img {
+    width: 80%;
+  }
 }
 
 .PizzaDetails-main-container .PizzaDetails-container .pizza-info {

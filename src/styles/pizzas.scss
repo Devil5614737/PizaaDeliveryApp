@@ -1,32 +1,31 @@
 .main-container{
-    max-width: 1200px;
-   
-    margin: 0 auto;
-
+    padding: 1em 4%;
+    // margin: 0 auto;
+    
     .pizzas-container{
         margin-top: 52px;
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        grid-column-gap:8%;
+        // grid-column-gap:8%;
         grid-row-gap: 62px;
-        @media screen and (max-width:1200px) {
+        @media screen and (max-width:1160px) {
             grid-template-columns: repeat(2,1fr);
-            grid-column-gap:1%;
+            // grid-column-gap:1%;
             place-items: center;
         }
-        @media screen and (max-width:600px) {
+        @media screen and (max-width:748px) {
             grid-template-columns: repeat(1,1fr);
             place-items: center;
             grid-column-gap:1%;
         }
-        @media screen and (max-width:500px) {
-            grid-template-columns: repeat(1,1fr);
-            width:fit-content;
-            margin-left: 25%;
-            place-items: center;
-            grid-column-gap:1%;
-            justify-content: center;
-        }
+        // @media screen and (max-width:500px) {
+        //     grid-template-columns: repeat(1,1fr);
+        //     width:fit-content;
+        //     margin-left: 25%;
+        //     place-items: center;
+        //     grid-column-gap:1%;
+        //     justify-content: center;
+        // }
         .pizza-card{
             cursor: pointer;
             width: 339px;
